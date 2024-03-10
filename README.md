@@ -6,7 +6,7 @@ Minimize a function using distance limits
 **Start: 2024**
 
 ## Why
-I wanted to use minimization algorithms to find values that are within certain distance limits (_lower lim_: 1.7, _upper lim_: 2.3) to a reference value (_x0_: 1). I implemented a few functions to calculate the error between the value and the reference value.
+I wanted to use minimization algorithms to find values that are within certain distance limits (_lower lim_: 1.7, _upper lim_: 2.3) to a reference value (_x0_: 1). I implemented a few functions to calculate the error between a value and the reference value.
 
 Here is a chart where 3 functions are shown (y1, y2, y3):
 
