@@ -22,13 +22,13 @@ I then tested these three functions with a few minimization algorithms implement
 
 | Opt. Method  | Function | Result values | Number of correct results  | Iterations |
 |--------------|----------|---------------|----------------------------|------------|
-| Powell       | 1        | [-1.29..3.29] | 100                        | 2          |
+| [Powell](https://en.wikipedia.org/wiki/Powell%27s_method)       | 1        | [-1.29..3.29] | 100                        | 2          |
 | Powell       | 2        | [-1.29..3.22] | 100                        | 2          |
 | Powell       | 3        | [-1.29..3.13] | 100                        | 2          |
 | CG           | 1        | [-1.30..3.30] | 100                        | 4          |
 | CG           | 2        | [-1.30..3.30] | 100                        | 7          |
 | CG           | 3        | [-1.30..3.30] | 100                        | 1          |
-| BFGS         | 1        | [-1.30..3.30] | 100                        | 9          |
+| [BFGS](https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm)         | 1        | [-1.30..3.30] | 100                        | 9          |
 | BFGS         | 2        | [-1.29..3.30] | 100                        | 7          |
 | BFGS         | 3        | [-1.30..3.30] | 81                         | 5          |
 | L-BFGS-B     | 1        | [-1.30..3.30] | 100                        | 5          |
