@@ -20,34 +20,25 @@ The following chart shows the same functions, but on the x-axis, the distance fr
 
 I then tested these three functions with a few minimization algorithms implemented in [SciPy](https://docs.scipy.org/) using 100 random values:
 
-| Opt. Method  | Function | Result values | Number of correct results  | Iterations |
-|--------------|----------|---------------|----------------------------|------------|
-| [Powell](https://en.wikipedia.org/wiki/Powell%27s_method)       | 1        | [-1.29..3.29] | 100                        | 2          |
-| Powell       | 2        | [-1.29..3.22] | 100                        | 2          |
-| Powell       | 3        | [-1.29..3.13] | 100                        | 2          |
-| CG           | 1        | [-1.30..3.30] | 100                        | 4          |
-| CG           | 2        | [-1.30..3.30] | 100                        | 7          |
-| CG           | 3        | [-1.30..3.30] | 100                        | 1          |
-| [BFGS](https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm)         | 1        | [-1.30..3.30] | 100                        | 9          |
-| BFGS         | 2        | [-1.29..3.30] | 100                        | 7          |
-| BFGS         | 3        | [-1.30..3.30] | 81                         | 5          |
-| L-BFGS-B     | 1        | [-1.30..3.30] | 100                        | 5          |
-| L-BFGS-B     | 2        | [-1.27..3.25] | 100                        | 5          |
-| L-BFGS-B     | 3        | [-1.30..3.30] | 81                         | 3          |
-| TNC          | 1        | [-1.29..3.30] | 98                         | 25         |
-| TNC          | 2        | [-1.29..3.27] | 100                        | 19         |
-| TNC          | 3        | [-1.30..3.30] | 99                         | 20         |
-| SLSQP        | 1        | [-1.30..3.30] | 100                        | 7          |
-| SLSQP        | 2        | [-1.28..3.21] | 100                        | 9          |
-| SLSQP        | 3        | [-1.30..3.30] | 100                        | 4          |
-| trust-constr | 1        | [-1.30..3.30] | 95                         | 18         |
-| trust-constr | 2        | [-1.24..3.27] | 100                        | 8          |
-| trust-constr | 3        | [-1.30..3.30] | 52                         | 5          |
-
-
-
-
-
-
-
-
+| Opt. Method  | Function | Percentage of correct results  | Iterations |
+|--------------|----------|--------------------------------|------------|
+| [Powell](https://en.wikipedia.org/wiki/Powell%27s_method)       | 1        | 100                        | 2          |
+| Powell       | 2        | 100                            | 2          |
+| Powell       | 3        | 100                            | 2          |
+| CG           | 1        | 100                            | 4          |
+| CG           | 2        | 100                            | 7          |
+| CG           | 3        | 100                            | 1          |
+| [BFGS](https://en.wikipedien%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm)         | 1        | 100                        | 9          |
+| BFGS         | 2        | 100                            | 7          |
+| BFGS         | 3        | 81                             | 5          |
+| L-BFGS-B     | 1        | 100                            | 5          |
+| L-BFGS-B     | 2        | 100                            | 5          |
+| L-BFGS-B     | 3        | 81                             | 3          |
+| TNC          | 1        | 98                             | 25         |
+| TNC          | 2        | 100                            | 19         |
+| TNC          | 3        | 99                             | 20         |
+| SLSQP        | 1        | 100                            | 7          |
+| SLSQP        | 2        | 100                            | 9          |
+| SLSQP        | 3        | 100                            | 4          |
+| trust-constr | 1        | 95                             | 18         |
+| trust-constr | 2        | 100                            | 8          |
