@@ -14,7 +14,7 @@ Here is a chart where 3 functions are shown (y1, y2, y3):
 
 where the red line marks the reference value (_x0_) and the orange lines mark the two possible valid ranges.
 
-The following chart shows the same functions, but on the x-axis the distances of the values from the reference value are shown:
+The following chart shows the same functions, but on the x-axis, the distance from the reference value is shown:
 
 ![chart](/images/chart2.png)
 
