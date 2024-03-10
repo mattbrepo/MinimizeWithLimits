@@ -28,7 +28,7 @@ I then tested these three functions with a few minimization algorithms implement
 | CG           | 1        | 100                            | 4          |
 | CG           | 2        | 100                            | 7          |
 | CG           | 3        | 100                            | 1          |
-| [BFGS](https://en.wikipedien%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm)         | 1        | 100                        | 9          |
+| [BFGS](https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm)     | 1        | 100                            | 9          |
 | BFGS         | 2        | 100                            | 7          |
 | BFGS         | 3        | 81                             | 5          |
 | L-BFGS-B     | 1        | 100                            | 5          |
