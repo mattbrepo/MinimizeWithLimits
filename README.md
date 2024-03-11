@@ -18,27 +18,32 @@ The following chart shows the same functions, but on the x-axis, the distance fr
 
 ![chart](/images/chart2.png)
 
-I then tested these three functions with a few minimization algorithms implemented in [SciPy](https://docs.scipy.org/) using 100 random values:
+I then tested these three functions with a few minimization algorithms implemented in [SciPy](https://docs.scipy.org/) using 100 random values ranging from -100 to 100:
 
-| Opt. Method  | Function | Percentage of correct results  | Iterations |
-|--------------|----------|--------------------------------|------------|
-| [Powell](https://en.wikipedia.org/wiki/Powell%27s_method)       | 1        | 100                        | 2          |
-| Powell       | 2        | 100                            | 2          |
-| Powell       | 3        | 100                            | 2          |
-| CG           | 1        | 100                            | 4          |
-| CG           | 2        | 100                            | 7          |
-| CG           | 3        | 100                            | 1          |
-| [BFGS](https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm)     | 1        | 100                            | 9          |
-| BFGS         | 2        | 100                            | 7          |
-| BFGS         | 3        | 81                             | 5          |
-| L-BFGS-B     | 1        | 100                            | 5          |
-| L-BFGS-B     | 2        | 100                            | 5          |
-| L-BFGS-B     | 3        | 81                             | 3          |
-| TNC          | 1        | 98                             | 25         |
-| TNC          | 2        | 100                            | 19         |
-| TNC          | 3        | 99                             | 20         |
-| SLSQP        | 1        | 100                            | 7          |
-| SLSQP        | 2        | 100                            | 9          |
-| SLSQP        | 3        | 100                            | 4          |
-| trust-constr | 1        | 95                             | 18         |
-| trust-constr | 2        | 100                            | 8          |
+| Opt. Method  | Function (y) | Percentage of correct results | Iterations |
+|--------------|--------------|-------------------------------|------------|
+| Powell       | 1            | 100                           | 3          |
+| Powell       | 2            | 100                           | 3          |
+| Powell       | 3            | 100                           | 3          |
+| CG           | 1            | 79                            | 15         |
+| CG           | 2            | 100                           | 20         |
+| CG           | 3            | 100                           | 3          |
+| BFGS         | 1            | 99                            | 313        |
+| BFGS         | 2            | 100                           | 29         |
+| BFGS         | 3            | 100                           | 6          |
+| L-BFGS-B     | 1            | 97                            | 21         |
+| L-BFGS-B     | 2            | 100                           | 21         |
+| L-BFGS-B     | 3            | 79                            | 3          |
+| TNC          | 2            | 39                            | 78         |
+| TNC          | 3            | 99                            | 58         |
+| SLSQP        | 2            | 100                           | 28         |
+| SLSQP        | 3            | 100                           | 5          |
+| trust-constr | 1            | 99                            | 54         |
+| trust-constr | 2            | 100                           | 69         |
+| trust-constr | 3            | 98                            | 8          |
+
+Some of the algorithms used:
+- [Powell](https://en.wikipedia.org/wiki/Powell%27s_method)
+- [CG](https://en.wikipedia.org/wiki/Conjugate_gradient_method)
+- [BFGS](https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm)
+- [TNC](https://en.wikipedia.org/wiki/Truncated_Newton_method)

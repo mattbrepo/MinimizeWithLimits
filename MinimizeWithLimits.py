@@ -112,11 +112,16 @@ plt.grid(True)
 plt.show()
 
 # %%
-x = np.random.uniform(x_lim[0], x_lim[1], 100)
+x = np.random.uniform(-100, 100, 100)
 
 scipy_methods = ['Nelder-Mead', 'Powell', 'CG', 'BFGS', 'L-BFGS-B', 'TNC', 'SLSQP', 'trust-constr']
+print(f'Opt. Method, Function (y), Percentage of correct results, Iterations')
 for method in scipy_methods:
   for mode in [1,2,3]:
     err_mode = mode
     res_scipy = optimize.minimize(err_func, x, method=method)
-    print(f'{method}, mode: {err_mode}, success: {res_scipy.success}, x: [{min(res_scipy.x):.2f}..{max(res_scipy.x):.2f}], in range: {((x0-u_lim <= res_scipy.x) & (res_scipy.x <= x0-l_lim) | (x0+l_lim <= res_scipy.x) & (res_scipy.x <= x0+u_lim)).sum()} on {len(res_scipy.x)}, iters: {res_scipy.nit}')
+    #print(f'{method}, mode: {err_mode}, success: {res_scipy.success}, x: [{min(res_scipy.x):.2f}..{max(res_scipy.x):.2f}], in range: {((x0-u_lim <= res_scipy.x) & (res_scipy.x <= x0-l_lim) | (x0+l_lim <= res_scipy.x) & (res_scipy.x <= x0+u_lim)).sum()} on {len(res_scipy.x)}, iters: {res_scipy.nit}')
+    if res_scipy.success:
+      print(f'{method}, {err_mode}, {((x0-u_lim <= res_scipy.x) & (res_scipy.x <= x0-l_lim) | (x0+l_lim <= res_scipy.x) & (res_scipy.x <= x0+u_lim)).sum()}, {res_scipy.nit}')
+
+# %%
